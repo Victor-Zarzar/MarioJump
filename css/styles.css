@@ -3,7 +3,7 @@
 * {
     margin: 0;
     border: 0;
-    border: border-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -14,7 +14,7 @@ body {
     width: 100%;
     height: 500px;
     border-top: 800px;
-    margin: 0;
+    margin: 0 auto;
     position: relative;
     overflow: hidden;
     background: linear-gradient(#87CEE8, #E0F6FF);
@@ -31,24 +31,24 @@ body {
     z-index: 10;
 }
 
-.jump {
+.jump{
     animation: mario-jump-animation 1500ms ease-out;
 }
 
 @keyframes mario-jump-animation {
-    0% {
+    0%{
         bottom: 0px;
     }
 
-    45% {
+    45%{
         bottom: 180px;
     }
 
-    55% {
+    55%{
         bottom: 180px;
     }
 
-    100% {
+    100%{
         bottom: 0px;
     }
 }
@@ -65,16 +65,16 @@ body {
     z-index: 10;
 }
 
-.pipe-animation {
+.pipe-animation{
     animation: grass-animation 3s infinite linear;
 }
 
 @keyframes pipe-animation {
-    from {
+    from{
         right: -80px;
     }
 
-    to {
+    to{
         right: 100%;
     }
 }
@@ -88,16 +88,16 @@ body {
     padding-bottom: 34px;
 }
 
-.grass-animation {
+.grass-animation{
     animation: grass-animation 3s infinite linear;
 }
 
 @keyframes grass-animation {
-    from {
+    from{
         right: -80px;
     }
 
-    to {
+    to{
         right: 100%;
     }
 
@@ -111,61 +111,61 @@ body {
     padding-bottom: 34px;
 }
 
-.floor-1 {
+.floor-1{
     position: absolute;
     z-index: 0;
 }
 
-.floor-animation-1 {
+.floor-animation-1{
     animation: floor-animation-1 3.1s infinite linear;
 }
 
 @keyframes floor-animation-1 {
-    0% {
+    0%{
         right: 0px;
     }
 
-    100% {
+    100%{
         right: 100%;
     }
 }
 
-.floor-2 {
+.floor-2{
     position: absolute;
     right: -1500px;
     z-index: 10;
 }
 
-.floor-animation-2 {
+.floor-animation-2{
     animation: floor-animation-2 6.2s infinite linear;
 }
 
 @keyframes floor-animation-2 {
-    0% {
+    0%{
         right: -1500px;
     }
 
-    100% {
+    100%{
         right: 100%;
     }
 }
 
-.floor-3 {
+.floor-3{
     position: absolute;
     right: -1500px;
     z-index: 10;
 }
 
-.floor-animation-3 {
+.floor-animation-3{
     animation: floor-animation-3 6.2s infinite linear;
 }
 
 @keyframes floor-animation-3 {
-    0% {
+    0%{
         right: -1500px;
     }
 
-    100% {
+    100%{
         right: 100%;
     }
 }
@@ -176,7 +176,7 @@ body {
     width: 550px;
     padding-top: 50px;
     z-index: 4;
-    animation: clouds-animation 40s infinite linear;
+    animation: clouds-animation-1 40s infinite linear;
 }
 
 .clouds-2 {
@@ -199,7 +199,8 @@ body {
     from{
         right: -550px;
     }
-    to{
+
+    to {
         right: 100%;
     }
 }
@@ -208,6 +209,7 @@ body {
     from{
         right: -1300px;
     }
+
     to{
         right: 100%;
     }
@@ -217,6 +219,7 @@ body {
     from{
         right: -250px;
     }
+
     to{
         right: 100%;
     }
